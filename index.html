@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="mystyle.css">
+   <script>
+     function myplay(){
+       var audio = new Audio('gunshot.wav');
+       audio.play();
+       fullscreen();
+       document.getElementById('container').style.display='none';
+       document.body.style.backgroundImage = "url('screen.jpg')";
+     }
+
+     function fullscreen(){
+
+     }
+     
+   </script>
+   </head>
+<body>
+<div id="container">
+  <h1> Let's play a game! </h1>
+  <div id="top_square">
+    <button id="btn" onclick="myplay()">CLICK ME</button>
+  </div>
+  <div id="bottom_square"></div>
+</div>
+</body>
+</html>
